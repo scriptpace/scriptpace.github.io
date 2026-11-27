@@ -575,8 +575,8 @@ body[data-locale="zh-Hans"] .hero h1 {
 }
 .feature-row h2 { margin: 0 0 16px; font-size: clamp(30px, 4vw, 48px); letter-spacing: -0.05em; line-height: 1.06; }
 .feature-row p { margin: 0; color: var(--muted); font-size: 17px; }
-.feature-row__points { display: grid; gap: 8px; margin: 16px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); list-style: none; color: var(--ink); font-size: 15px; line-height: 1.5; }
-.feature-row__points li { display: flex; align-items: baseline; gap: 8px; }
+.feature-row__points { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); list-style: none; color: var(--ink); font-size: 15px; line-height: 1.5; }
+.feature-row__points li { display: flex; min-width: 0; align-items: baseline; gap: 8px; overflow-wrap: anywhere; }
 .feature-row__points li::before { content: "✓"; flex: 0 0 auto; color: var(--accent); font-weight: 700; }
 .feature-row__tag { margin-bottom: 14px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
 
